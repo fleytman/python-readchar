@@ -76,6 +76,8 @@ if sys.platform in ("win32", "cygwin"):
                     except KeyError:
                         return None
                     return x
+                elif a == 8:
+                    return key.BACKSPACE
                 else:
                     return ch.decode()
 
