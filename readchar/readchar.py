@@ -31,31 +31,54 @@ if sys.platform in ("win32", "cygwin"):
         13: key.ENTER,
         27: key.ESC,
         15104: key.F1,
+        15328: key.F1,
         15360: key.F2,
+        15584: key.F2,
         15616: key.F3,
+        15840: key.F3,
         15872: key.F4,
+        16096: key.F4,
         16128: key.F5,
+        16352: key.F5,
         16384: key.F6,
+        16608: key.F6,
         16640: key.F7,
+        16864: key.F7,
         16896: key.F8,
+        17120: key.F8,
         17152: key.F9,
+        17376: key.F9,
         17408: key.F10,
-        22272: key.F11,
+        17632: key.F10,
+        34048: key.F11,
+        34272: key.F11,
+        34304: key.F12,
         34528: key.F12,
-        7680: key.ALT_A,
         # don't have table entries for...
-        # CTRL_ALT_A, # Ctrl-Alt-A, etc.
+        # CTR_A, ..
+        # ALT_A, ..
+        # CTRL-F1, ..
         # CTRL_ALT_SUPR,
-        # CTRL-F1
+        # CTRL_ALT_A, .., etc.
+        20992: key.INSERT,
         21216: key.INSERT,
+        21248: key.SUPR,  # key.py uses SUPR, not DELETE
         21472: key.SUPR,  # key.py uses SUPR, not DELETE
+        18688: key.PAGE_UP,
         18912: key.PAGE_UP,
+        20736: key.PAGE_DOWN,
         20960: key.PAGE_DOWN,
+        18176: key.HOME,
         18400: key.HOME,
+        20224: key.END,
         20448: key.END,
+        18432: key.UP,
         18656: key.UP,
+        20480: key.DOWN,
         20704: key.DOWN,
+        19200: key.LEFT,
         19424: key.LEFT,
+        19712: key.RIGHT,
         19936: key.RIGHT,
     }
 
