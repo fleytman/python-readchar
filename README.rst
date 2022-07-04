@@ -180,18 +180,18 @@ Licensed under `the MIT licence <licence_>`_.
 .. |licence badge| image:: https://img.shields.io/pypi/l/readchar?color=blue
     :target: licence_
     :alt: Project licence
-.. |test status| image:: https://github.com/magmax/python-readchar/actions/workflows/run-tests.yml/badge.svg
-    :target: github.com/magmax/python-readchar/actions/workflows/run-tests.yml?query=branch%3Amaster
+.. |test status| image:: https://github.com/Cube707/python-readchar/actions/workflows/run-tests.yml/badge.svg
+    :target: https://github.com/Cube707/python-readchar/actions/workflows/run-tests.yml?query=branch%3Amaster
     :alt: Automated testing results
-.. |coverage status| image:: https://coveralls.io/repos/github/magmax/python-readchar/badge.svg?branch=master
-    :target: https://coveralls.io/github/magmax/python-readchar?branch=master
+.. |coverage status| image:: https://coveralls.io/repos/github/Cube707/python-readchar/badge.svg?branch=master
+    :target: https://coveralls.io/github/Cube707/python-readchar?branch=master
     :alt: Coveralls results
 .. |pip downloads badge| image:: https://img.shields.io/pypi/dd/readchar.svg
     :target: PyPi_
     :alt: Number of PyPI downloads
 
-.. _GitHub: https://github.com/magmax/python-readchar
-.. _PyPi: https://pypi.python.org/pypi/readchar
+.. _GitHub: https://github.com/Cube707/python-readchar
+.. _PyPi: https://test.pypi.org/project/readchar/
 .. _licence: LICENCE
 .. _python-inquirer: https://github.com/magmax/python-inquirer
 .. _@magmax_en: https://twitter.com/magmax_en
