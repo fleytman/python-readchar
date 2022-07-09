@@ -1,6 +1,5 @@
 import sys
 import termios
-import tty
 import select
 
 
@@ -18,14 +17,17 @@ def readchar(blocking=True):
     """Reads a single character from the input stream. Retruns None if none is avalable.
     If blocking=True the function waits for the next character."""
 
-    if not (blocking or kbhit()):
-        return None
+    ch = None
 
     fd = sys.stdin.fileno()
     old_settings = termios.tcgetattr(fd)
+    term = termios.tcgetattr(fd)
+    term[3] &= ~termios.ICANON & ~termios.ECHO & ~termios.IGNBRK & ~termios.BRKINT
+    termios.tcsetattr(fd, termios.TCSAFLUSH, term)
+
     try:
-        tty.setraw(sys.stdin.fileno())
-        ch = sys.stdin.read(1)
+        if blocking or kbhit():
+            ch = sys.stdin.read(1)
     finally:
         termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
     return ch
