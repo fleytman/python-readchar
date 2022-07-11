@@ -11,7 +11,7 @@ github_ref = os.getenv("GITHUB_REF")
 if github_ref and github_ref.startswith("refs/tags"):
     version = github_ref[10:]
 else:
-    version = "0.0.0-local"
+    version = "3.1.0-dev0"
 
 
 def read_description():
