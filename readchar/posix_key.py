@@ -1,7 +1,7 @@
 # common
 LF = "\x0a"
 CR = "\x0d"
-ENTER = LF
+ENTER = CR
 BACKSPACE = "\x7f"
 SPACE = "\x20"
 ESC = "\x1b"
